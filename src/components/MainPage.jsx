@@ -11,7 +11,6 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Contact from "./Contact";
 import debounce from 'lodash.debounce';
 
-
 export default function MainPage() {
   const [search, setSearchImmediate] = useState();
   const setSearch = useMemo(() => debounce(setSearchImmediate, 1000), [setSearchImmediate]);
